@@ -191,7 +191,6 @@ Staged
 ```
 git reset name.py
 ```
-
 Commits
 ```
 git reset HEAD

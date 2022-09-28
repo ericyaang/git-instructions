@@ -170,6 +170,7 @@ git push origin branch-name
 git pull
 ```
 ## Merge branches
+Remember to checkout
 ```
 git diff master
 git merge master

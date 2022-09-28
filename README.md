@@ -16,7 +16,6 @@
   - [See changes](#see-changes)
   - [Pull requests](#pull-requests)
   - [Update changes in the remote repository to local](#update-changes-in-the-remote-repository-to-local)
-  - [Create request pull to the master branch](#create-request-pull-to-the-master-branch)
   - [Merge branches](#merge-branches)
   - [Update with changes in the master branch](#update-with-changes-in-the-master-branch)
   - [After the merge, delete the branch](#after-the-merge-delete-the-branch)
@@ -160,14 +159,15 @@ git diff name-of-the-branch
 
 A request to have your code pulled in another branch
 
+Create request pull to the master branch
+
+```
+git push origin branch-name
+```
 ## Update changes in the remote repository to local
 
 ```
 git pull
-```
-## Create request pull to the master branch
-```
-git push origin test
 ```
 ## Merge branches
 ```
@@ -185,7 +185,6 @@ git branch -d name-of-the-branch
 ```
 
 ## Log of all commits
-vorletzte
 ```
 git log
 ```

@@ -12,6 +12,9 @@
   - [Create .gitignore](#create-gitignore)
   - [Remove files](#remove-files)
   - [Revert deleted files](#revert-deleted-files)
+  - [Branching](#branching)
+  - [See changes](#see-changes)
+  - [Pull requests](#pull-requests)
 
 ## Settings for SSH
 ```
@@ -123,3 +126,29 @@ git rm --cached file.txt
 ```
 git reset --hard HEAD
 ```
+
+## Branching
+
+See what is there
+```
+git branch
+```
+
+Switch between branches
+```
+git checkout branch-name
+```
+
+Create a new one
+```
+git checkout -b name-of-the-branch
+```
+
+## See changes
+```
+git diff name-of-the-branch
+```
+
+## Pull requests
+
+A request to have your code pulled in another branch

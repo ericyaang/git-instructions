@@ -16,7 +16,11 @@
   - [See changes](#see-changes)
   - [Pull requests](#pull-requests)
   - [Update changes in the remote repository to local](#update-changes-in-the-remote-repository-to-local)
+  - [Merge branches](#merge-branches)
+  - [Update with changes in the master branch](#update-with-changes-in-the-master-branch)
   - [After the merge, delete the branch](#after-the-merge-delete-the-branch)
+  - [Log of all commits](#log-of-all-commits)
+  - [Undoing shit](#undoing-shit)
 
 ## Settings for SSH
 ```
@@ -160,8 +164,43 @@ A request to have your code pulled in another branch
 ```
 git pull
 ```
-
+## Merge branches
+```
+git diff master
+git merge master
+```
+## Update with changes in the master branch
+```
+git diff master
+git commit -am "updated with master"
+```
 ## After the merge, delete the branch
 ```
 git branch -d name-of-the-branch
-``
+```
+
+## Log of all commits
+vorletzte
+```
+git log
+```
+
+## Undoing shit
+
+Staged
+```
+git reset name.py
+```
+Commits
+```
+git reset HEAD
+```
+Vorletzte commit
+```
+git reset HEAD~1
+```
+For multiple commits, check log and copy the hash of the commit and then
+`--hard` to remove all changes
+```
+git reset --hard c2119af9239eaf762e7e84a7a4859d42f8665660
+```

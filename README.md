@@ -15,6 +15,8 @@
   - [Branching](#branching)
   - [See changes](#see-changes)
   - [Pull requests](#pull-requests)
+  - [Update changes in the remote repository to local](#update-changes-in-the-remote-repository-to-local)
+  - [After the merge, delete the branch](#after-the-merge-delete-the-branch)
 
 ## Settings for SSH
 ```
@@ -152,3 +154,14 @@ git diff name-of-the-branch
 ## Pull requests
 
 A request to have your code pulled in another branch
+
+## Update changes in the remote repository to local
+
+```
+git pull
+```
+
+## After the merge, delete the branch
+```
+git branch -d name-of-the-branch
+``
